@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import SearchForm from '../components/SearchForm';
 
-const Search = props => {
+const Search = () => {
 
     const [searchTerm, setSearchTerm] = useState('');
 

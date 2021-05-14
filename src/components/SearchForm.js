@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import {ReactComponent as SearchIcon} from '../icons/search.svg';
 
 const Form = styled.form`
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around
+    justify-content: space-around;
+    box-sizing: border-box;
 `;
 
 const Button = styled.button`
@@ -13,7 +15,8 @@ const Button = styled.button`
     background-color: #f00;
     padding: 10px 15px;
     border-radius: 5px;
-    color: #fff;
+    color: #000;
+    font-weight: bold;
 
     &:hover{
         opacity: .5;
@@ -39,10 +42,8 @@ const SearchForm = ({searchTerm, setSearchTerm, handleSubmit }) => {
 
                 <Button type='submit' onClick = { handleSubmit }>
                     <span className='screen-readers'>Search</span>
-                    {/* // add icons */}
+                    <SearchIcon />
                 </Button>
-
-
             </Form>
         </>
     )
