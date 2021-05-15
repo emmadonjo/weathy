@@ -6,7 +6,7 @@ import {MemoryRouter} from 'react-router';
 const Init = (Component, props = null) => {
     return render(
         <MemoryRouter>
-            <Component props = {props} />
+            <Component  {...props} />
         </MemoryRouter>
     )
 };

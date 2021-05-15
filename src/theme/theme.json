@@ -1,0 +1,37 @@
+{
+    "data": {
+        "dark": {
+            "id": "theme_01",
+            "name": "dark theme",
+            "main": {
+                "background": "#000",
+                "color": "#999"
+            },
+            "basic": {
+                "background": "#101010",
+                "color": "#999"
+            },
+            "primary": {
+                "background": "#222",
+                "color": "#999"
+            }
+        },
+
+        "light": {
+            "id": "theme_02",
+            "name": "light theme",
+            "main": {
+                "background": "#FFFFFF",
+                "color": "#222222"
+            },
+            "basic": {
+                "background": "#DDDDDD",
+                "color": "#222222"
+            },
+            "primary": {
+                "background": "#BABABA",
+                "color": "#222222"
+            }
+        }
+    }
+}

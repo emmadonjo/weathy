@@ -8,13 +8,31 @@ const Form = styled.form`
     flex-direction: row;
     justify-content: space-around;
     box-sizing: border-box;
+    margin-bottom: 40px;
+
+    @media (min-width: 916px){
+        width: 80%;
+        margin: auto;
+    }
+    
+
+    input{
+       flex-basis: 95%;
+       border: 1px solid red;
+       border-radius: 5px 0 0 5px;
+       padding: 0 15px;
+    }
+
+    input:focus{
+        border: 1px solid red;
+    }
 `;
 
 const Button = styled.button`
-    border: none;
+    border: 1px solid red;
     background-color: #f00;
     padding: 10px 15px;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     color: #000;
     font-weight: bold;
 
@@ -35,6 +53,9 @@ const SearchForm = ({searchTerm, setSearchTerm, handleSubmit }) => {
                     value={searchTerm} 
                     name='search' 
                     id='search-field' 
+                    placeholder = 'Enter city to search'
+                    pattern = '[a-zA-Z]'
+                    title = 'Only texts are allowed'
                     onChange = {e=>{
                         setSearchTerm(e.target.value)}
                     }

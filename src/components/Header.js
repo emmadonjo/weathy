@@ -1,28 +1,36 @@
 import React from 'react';
-import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import styled from 'styled-components';
 
 import Nav from './Nav';
-import Home from '../pages/Home';
-import Search from '../pages/Search';
-import Locations from '../pages/Locations';
+
+const  Head = styled.header`
+    height: 100vh;
+    position: fixed;
+    display:inherit;
+    width: 200px;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: ${({ theme }) =>theme.main.background};
+
+    @media (max-width: 640px){
+        width: 30%;
+    }
+
+    @media (max-width: 320px){
+        width: 140px;
+    }
+`;
+
 
 
 const Header = props => {
 
     return(
         <>
-            <Router>
+            <Head>            
                 <Nav />
-                <Switch>
-                    <Route exact path='/' component={Home} />
-                </Switch>
-                <Switch>
-                    <Route exact path='/search' component={Search} />
-                </Switch>
-                <Switch>
-                    <Route exact path='/locations' component={Locations} />
-                </Switch>
-            </Router>
+            </Head>
         </>
     )
 }

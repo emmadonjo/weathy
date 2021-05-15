@@ -9,6 +9,8 @@ const GlobalStyle = createGlobalStyle`
     body{
         font-szie: 16px;
         font-family: serif;
+        background-color: ${({ theme }) =>theme.basic.background};
+        color: ${({ theme }) =>theme.basic.color};
     }
 
     h1{
