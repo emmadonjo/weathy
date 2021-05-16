@@ -18,27 +18,37 @@ const Form = styled.form`
 
     input{
        flex-basis: 95%;
-       border: 1px solid red;
+       border: 1px solid ${({ theme }) => theme.main.background };
        border-radius: 5px 0 0 5px;
        padding: 0 15px;
+       background-color: ${({ theme }) => theme.main.background };
+       color: ${({ theme }) => theme.main.color };
+       box-shadow: 0px 0px 5px #000;
+       font-size: 1.2rem;
+
+       &::placeholder{
+        color: ${({ theme }) => theme.main.color };
+       }
     }
 
     input:focus{
-        border: 1px solid red;
+        border: 1px solid ${({ theme }) => theme.main.background };;
     }
 `;
 
 const Button = styled.button`
-    border: 1px solid red;
-    background-color: #f00;
+    border: 1px solid ${({ theme }) => theme.main.background };
+    background-color: ${({ theme }) => theme.main.background };
     padding: 10px 15px;
     border-radius: 0 5px 5px 0;
-    color: #000;
+    color: ${({ theme }) => theme.primary.color };
     font-weight: bold;
+    font-size: 1.2rem;
 
     &:hover{
-        opacity: .5;
         cursor: pointer;
+        background-color: red;
+        color: ${({ theme }) => theme.main.background };
     }
 `;
 

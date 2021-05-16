@@ -14,7 +14,8 @@
             "primary": {
                 "background": "#222",
                 "color": "#999"
-            }
+            },
+            "abstract": "#ff0"
         },
 
         "light": {
@@ -31,7 +32,8 @@
             "primary": {
                 "background": "#BABABA",
                 "color": "#222222"
-            }
+            },
+            "abstract": "#ff0"
         }
     }
 }

@@ -24,7 +24,7 @@ const Title = props => {
 
     return (
         <Heading>
-            <h1>{props.title}</h1>
+            <h2>{props.title}</h2>
             <time>
                 { 
                 `${timer.toDateString()} ${timer.getUTCHours()}:${timer.getUTCMinutes()}:${timer.getUTCSeconds()}`

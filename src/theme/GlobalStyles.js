@@ -14,7 +14,11 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1{
-        font-size: 2rem;
+        font-size: 1.8rem;
+    }
+
+    h2{
+        font-size: 1.6rem;
     }
 
     .screen-readers {
@@ -24,6 +28,12 @@ const GlobalStyle = createGlobalStyle`
         width: 1px;
         height: 1px;
         overflow: hidden;
+    }
+
+    @media (max-width: 640px){
+        .hide{
+            display: none;
+        }
     }
 `;
 
