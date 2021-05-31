@@ -1,7 +1,7 @@
 import { render } from '@testing-library/react';
 import {MemoryRouter} from 'react-router';
 
-// function to initial components for tests
+// function to initialize components for tests
 // Keeps everything Dry
 const Init = (Component, props = null) => {
     return render(

@@ -4,11 +4,11 @@
 // @param Date date
 export const shortDay = date => {
     if(typeof date !== 'object' || !(date instanceof Date)){
-        throw new Exception('Param must be a Date object')
+        throw new Error('Param must be a Date object');
     }
 
-    let day = date.getUTCDay();
-
+    let day = date.getDay();
+    
     switch(day){
         case 1:
             return 'Mon';
@@ -38,7 +38,7 @@ export const shortDay = date => {
 // st, nd, rd, or th
 export const doubleDate = date => {
     if(typeof date !== 'object' || !(date instanceof Date)){
-        throw new Exception('Param must be a Date object')
+        throw new Error('Param must be a Date object')
     }
 
     let day = date.getUTCDate();

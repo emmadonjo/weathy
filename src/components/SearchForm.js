@@ -18,7 +18,7 @@ const Form = styled.form`
 
     input{
        flex-basis: 95%;
-       border: 1px solid ${({ theme }) => theme.main.background };
+       border: 1px solid  ${({ theme }) => theme.abstract };
        border-radius: 5px 0 0 5px;
        padding: 0 15px;
        background-color: ${({ theme }) => theme.main.background };
@@ -38,17 +38,16 @@ const Form = styled.form`
 
 const Button = styled.button`
     border: 1px solid ${({ theme }) => theme.main.background };
-    background-color: ${({ theme }) => theme.main.background };
+    background-color: ${({ theme }) => theme.abstract };
     padding: 10px 15px;
     border-radius: 0 5px 5px 0;
-    color: ${({ theme }) => theme.primary.color };
+    color: #000;
     font-weight: bold;
     font-size: 1.2rem;
 
     &:hover{
         cursor: pointer;
-        background-color: red;
-        color: ${({ theme }) => theme.main.background };
+        opacity: .8;
     }
 `;
 
@@ -64,11 +63,13 @@ const SearchForm = ({searchTerm, setSearchTerm, handleSubmit }) => {
                     name='search' 
                     id='search-field' 
                     placeholder = 'Enter city to search'
-                    pattern = '[a-zA-Z]'
+                    pattern = '[a-zA-Z]+'
                     title = 'Only texts are allowed'
                     onChange = {e=>{
                         setSearchTerm(e.target.value)}
                     }
+
+                    autoFocus
                 />
 
                 <Button type='submit' onClick = { handleSubmit }>

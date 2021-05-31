@@ -6,19 +6,22 @@ const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
+    html{
+        font-size: 16px;
+        fonr-familiy: "Roboto", serif;
+    }
+
     body{
-        font-szie: 16px;
-        font-family: serif;
         background-color: ${({ theme }) =>theme.basic.background};
         color: ${({ theme }) =>theme.basic.color};
     }
 
     h1{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
 
     h2{
-        font-size: 1.6rem;
+        font-size: 1.3rem;
     }
 
     .screen-readers {

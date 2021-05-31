@@ -13,9 +13,9 @@
             },
             "primary": {
                 "background": "#222",
-                "color": "#999"
+                "color": "#fff"
             },
-            "abstract": "#ff0"
+            "abstract": "#CE900A"
         },
 
         "light": {
@@ -33,7 +33,7 @@
                 "background": "#BABABA",
                 "color": "#222222"
             },
-            "abstract": "#ff0"
+            "abstract": "#CE900A"
         }
     }
 }
